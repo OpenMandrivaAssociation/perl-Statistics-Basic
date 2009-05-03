@@ -1,5 +1,5 @@
 %define module   Statistics-Basic
-%define version    1.6005
+%define version    1.6007
 %define release    %mkrel 1
 
 Name:       perl-%{module}
