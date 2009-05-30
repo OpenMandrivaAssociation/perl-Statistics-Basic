@@ -2,7 +2,7 @@
 %define upstream_version 1.6500
 
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
+Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
 
 License:    GPL+ or Artistic
