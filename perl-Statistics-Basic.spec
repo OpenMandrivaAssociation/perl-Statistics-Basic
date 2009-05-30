@@ -1,25 +1,26 @@
-%define module   Statistics-Basic
-%define version    1.6007
-%define release    %mkrel 2
+%define upstream_name    Statistics-Basic
+%define upstream_version 1.6500
 
-Name:       perl-%{module}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
+Name:       perl-%{upstream_name}
+Version:    %{upstream_version}
+Release:    %mkrel 1
+
+License:    GPL+ or Artistic
 Group:      Development/Perl
-Summary:    A class for computing filtered vectors
-Url:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Statistics/%{module}-%{version}.tar.gz
+Summary:    A collection of very basic statistics modules
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Statistics/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(Number::Format)
 BuildRequires: perl(Scalar::Util)
 BuildArch: noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
-no description found
+A collection of very basic statistics modules
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
