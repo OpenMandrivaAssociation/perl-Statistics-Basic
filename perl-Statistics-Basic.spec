@@ -1,16 +1,16 @@
 %define upstream_name    Statistics-Basic
-%define upstream_version 1.6602
+%define upstream_version 1.6607
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 1.6607
+Release:	1
 Epoch:		1
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	A collection of very basic statistics modules
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Statistics/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Statistics/Statistics-Basic-1.6607.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Number::Format)
@@ -85,4 +85,5 @@ make test
 
 * Mon Mar 16 2009 cpan2dist 1.6004-1mdv
 - initial mdv release, generated with cpan2dist
+
 
