@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 1.6607
-Release:	1
+Release:	2
 Epoch:		1
 
 License:	GPL+ or Artistic
