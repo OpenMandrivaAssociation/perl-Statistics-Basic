@@ -9,7 +9,7 @@ Epoch:		1
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	A collection of very basic statistics modules
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Statistics/Statistics-Basic-1.6607.tar.gz
 
 BuildRequires:	perl-devel
