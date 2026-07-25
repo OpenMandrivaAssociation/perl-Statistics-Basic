@@ -1,16 +1,16 @@
 %define upstream_name    Statistics-Basic
-%define upstream_version 1.6607
+%define upstream_version 1.6611
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 1.6607
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 Epoch:		1
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	A collection of very basic statistics modules
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Statistics/Statistics-Basic-1.6607.tar.gz
+Url:		https://github.com/jettero/statistics--basic
+Source0:	https://cpan.metacpan.org/authors/id/J/JE/JETTERO/Statistics-Basic-1.6611.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
