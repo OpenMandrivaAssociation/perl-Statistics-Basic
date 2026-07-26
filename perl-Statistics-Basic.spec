@@ -1,9 +1,7 @@
 %define upstream_name    Statistics-Basic
-%define upstream_version 1.6611
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.6611
+Release:	2
 Epoch:		1
 
 License:	GPL+ or Artistic
@@ -22,7 +20,7 @@ BuildArch:	noarch
 A collection of very basic statistics modules
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -58,14 +56,11 @@ make test
 
 * Sat May 30 2009 Jérôme Quelin <jquelin@mandriva.org> 1:1.650.0-1mdv2010.0
 + Revision: 381275
-- adding epoch: tag to make sure %%perl_convert_version gets picked
-- really use %%perl_convert_version
-
-* Sat May 30 2009 Jérôme Quelin <jquelin@mandriva.org> 1.6500-1mdv2010.0
+- adding epoch: tag to make sure %1.6611 picked
+- really use %1.6611 Sat May 30 2009 Jérôme Quelin <jquelin@mandriva.org> 1.6500-1mdv2010.0
 + Revision: 381271
 - update to 1.6500
-- using %%perl_convert_version
-- fixed license, summary and description fields
+- using %1.6611 fixed license, summary and description fields
 
 * Fri May 15 2009 Jérôme Quelin <jquelin@mandriva.org> 1.6007-2mdv2010.0
 + Revision: 375901
